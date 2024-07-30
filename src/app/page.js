@@ -1,113 +1,135 @@
+
 import Image from "next/image";
+import styles from './styles/Home.module.css';
+// import styles from `./styles/Search.modele.css`;
+// import { Header } from "./composent/Header";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+  <div className={styles.contenu}>
+    <div className={styles.Home}>
+      <div className={styles.HomeCon}>
+        <h3 className={styles.H3}>Réussis tes études avec notre plateforme de cours en ligne!</h3>
+          <p className={styles.P}> Des cours interactifs et adaptés au programme scolaire gabonais pour t'aider à exceller en classe et aux examens.</p>
+          <a href="#" className={styles.Btn}>
+                      <span className={styles.Text}>Inscris-toi maintenant</span>
+                      <span  className={styles.Text} >Commence l'aventure</span>
+                  </a> 
+      
+      </div>
+        <div className={styles.image}>
+        <img src="../../public/home.jpg" alt="About Us" height={500} width={800} />
+
+        </div>
+    
+    </div>
+
+    {/* bare de rechercher */}
+
+    <div className={styles.Search}>
+      <form className={styles.SearchForm} id="searchForm">
+                  <input type="text" id="searchInput" placeholder="Rechercher un cours..." className={styles.Input} />
+                  {/* <select id="levelSelect" className={styles.Select}>
+                    <option value="">Tous les niveaux</option>
+                    <option value="6ème">6ème</option>
+                    <option value="5ème">5ème</option>
+                    <option value="4ème">4ème</option>
+                    <option value="3ème">3ème</option>
+                    <option value="2nde">2nde</option>
+                    <option value="1ère">1ère</option>
+                    <option value="Terminale">Terminale</option>
+                  </select>
+                  <select id="contentTypeSelect" className={styles.Select}>
+                    <option value="">Tous les types de contenu</option>
+                    <option value="cours">Cours</option>
+                    <option value="exercice">Exercices</option>
+                    <option value="devoir">Devoirs</option>
+                    <option value="td">TD</option>
+                    <option value="examen">Examens</option>
+                  </select>
+                  <input type="date" id="dateInput" className={styles.Input} /> */}
+                  <button type="submit" className={styles.Button}>Rechercher</button>
+      </form>
+
+
+      
+    </div>
+    <div className="flex justify-center items-center flex-wrap gap-4 ">
+    <button className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-105 hover:bg-green-500 hover:shadow-lg">
+        6ème
+    </button>
+    <button className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-105 hover:bg-green-500 hover:shadow-lg">
+        5ème
+    </button>
+    <button className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-105 hover:bg-green-500 hover:shadow-lg">
+        4ème
+    </button>
+    <button className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-105 hover:bg-green-500 hover:shadow-lg">
+        3ème
+    </button>
+    <button className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-105 hover:bg-green-500 hover:shadow-lg">
+        2nde
+    </button>
+    <button className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-105 hover:bg-green-500 hover:shadow-lg">
+        1ère
+    </button>
+    <button className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-105 hover:bg-green-500 hover:shadow-lg">
+        Tle C
+    </button>
+    <button className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-105 hover:bg-green-500 hover:shadow-lg">
+        Tle D
+    </button>
+</div>
+
+
+
+
+
+{/* a propos de nous  */}
+
+    <div className={styles.about}>
+    <h1 className={styles.heading}>A propos de nous</h1>
+      <div className={styles.container}>
+        <figure className={styles.aboutImage}>
+          <Image src="/images/about.jpg" alt="About Us" height={500} width={800} />
+          <Image src="/images/about-1.jpg" alt="About Us Secondary" className={styles.aboutImg} height={250} width={400} />
+        </figure>
+        <div className={styles.aboutContent}>
+          <h3>18 years of experience</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus aut impedit expedita aliquam provident quod excepturi minus. Similique eveniet fugiat doloribus nisi saepe cupiditate iusto itaque totam! Officia, enim qui.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum ipsa quod dolores officia at excepturi quas numquam vero dolorem vitae veritatis quisquam fugit voluptates doloribus, id pariatur in ipsam?</p>
+          <a href="#" className={styles.btn}>
+            <span className={styles.text}>read more</span>
+            <span className={`${styles.text} ${styles.text2}`} aria-hidden="true">read more</span>
           </a>
         </div>
       </div>
+    </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+    <div className="contact py-12 bg-gray-100" id="contact">
+    <h1 className="heading text-3xl font-bold text-center mb-8">Nous contacter</h1>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+    <div className="row flex flex-col md:flex-row items-center justify-around">
+        <div className="image mb-8 md:mb-0">
+            <img src="../../public/contact.png" alt="" className="w-full h-auto max-w-md mx-auto"/>
+        </div>
+        <form action="" className="w-full max-w-lg bg-white p-8 shadow-lg rounded-lg">
+            <h3 className="text-2xl font-semibold mb-6">Envoyer nous un message</h3>
+            <input type="text" placeholder="Nom" className="box w-full p-3 mb-4 border border-gray-300 rounded-lg"/>
+            <input type="email" placeholder="Email" className="box w-full p-3 mb-4 border border-gray-300 rounded-lg"/>
+            <input type="number" placeholder="Numero de téléphone" className="box w-full p-3 mb-4 border border-gray-300 rounded-lg"/>
+            <textarea placeholder="Message" className="box w-full p-3 mb-4 border border-gray-300 rounded-lg" cols="30" rows="10"></textarea>
+            <a href="#" className="btn inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-center font-semibold transition hover:bg-blue-500 hover:text-white">
+                <span className="text text-1">Envoyer le message</span>
+                <span className="text text-2 hidden">Envoyer le message</span>
+            </a>
+        </form>
+    </div>
+</div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+
+  </div>
   );
 }

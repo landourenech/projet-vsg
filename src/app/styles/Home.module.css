@@ -1,0 +1,352 @@
+/* Styles pour centrer le contenu avec une largeur maximale */
+.Contenu {
+    display: flex;
+
+    justify-content: center; /* Centre le contenu horizontalement */
+}
+
+.Home {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligne le contenu à gauche sur les grands écrans */
+    justify-content: center;
+    padding: 0 2rem; /* Ajout d'un espacement intérieur pour les petits écrans */
+    background: url(../../../public/home.jpg) no-repeat center center ;
+    background-size: cover;
+    background-position: center;
+    background-color: #ffd900;
+    
+
+     padding: 4rem 2rem; /* Espacement intérieur pour la section */
+   
+}
+
+.HomeCon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styles pour les éléments de texte */
+.H3 {
+    font-size: 5rem;
+    color: var(--white);
+    line-height: 1.2;
+    text-align: left; /* Alignement du texte à gauche */
+    margin-bottom: 1.5rem;
+}
+
+.P {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--white);
+    text-align: left; /* Alignement du texte à gauche */
+    margin-bottom: 2rem;
+    max-width: 50rem;
+}
+
+.Btn {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: max-content;
+    border: .1rem solid var(--primary-color);
+    background: var(--secondary);
+    padding: 1.2rem 4.5rem;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.Btn::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: 500ms ease;
+    z-index: -1;
+}
+
+.Text {
+    transition: 250ms ease;
+}
+
+.Btn:hover::before,
+.Btn:focus-visible::before {
+    bottom: -50%;
+}
+
+.Btn:hover .Text:first-child,
+.Btn:focus-visible .Text:first-child {
+    transform: translateY(-4rem);
+}
+
+.Btn:hover .Text:last-child,
+.Btn:focus-visible .Text:last-child {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Text:last-child {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    color: var(--secondary);
+}
+
+/* Media Query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .Home {
+        align-items: center; /* Centre horizontalement pour les petits écrans */
+        padding: 0 1rem; /* Réduit l'espacement intérieur pour les petits écrans */
+    }
+
+    .HomeCon {
+        align-items: center; /* Centre le contenu horizontalement pour les petits écrans */
+        max-width: 100%; /* Permet à HomeCon de s'étendre à la largeur de l'écran */
+    }
+
+    .H3 {
+        font-size: 3rem; /* Réduit la taille de la police pour les petits écrans */
+    }
+
+    .P {
+        font-size: 1.2rem; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Permet au paragraphe de s'étendre à la largeur de l'écran */
+    }
+
+    .Btn {
+        padding: 1rem 3rem; /* Réduit le padding pour les petits écrans */
+    }
+}
+
+
+
+
+
+/* Styles pour la section de recherche */
+.Search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le formulaire horizontalement */
+    align-items: center; /* Centre le formulaire verticalement */
+    flex-direction: column; /* Empile les éléments verticalement */
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 700px; /* Largeur maximale pour le formulaire de recherche */
+    margin: 0 auto; /* Centre la section horizontalement */
+}
+.image{
+
+}
+/* Styles pour le formulaire de recherche */
+.SearchForm {
+    display: flex;
+     /* Empile les champs verticalement */
+    align-items: center; /* Centre les champs horizontalement */
+    gap: 1rem; /* Espace entre les éléments */
+    width: 100%; /* Assure que le formulaire prend toute la largeur disponible */
+    padding: 1rem;
+    background: var(--white); /* Couleur de fond du formulaire */
+    border-radius: 0.5rem; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(10, 25, 238, 0.1); /* Ombre douce pour le formulaire */
+}
+
+/* Styles pour les champs de saisie et les sélecteurs */
+.Input, .Select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    width: 100%; /* Assure que les champs prennent toute la largeur disponible */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Styles pour le bouton */
+.Button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color); /* Couleur de fond du bouton */
+    color: var(--white); /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Effet de transition pour le survol */
+}
+
+.Button:hover {
+    background-color: var(--secondary-background-color); /* Couleur de fond au survol */
+}
+
+/* Media Query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .SearchForm {
+        flex-direction: column; /* Empile les éléments pour les petits écrans */
+        gap: 0.5rem; /* Réduit l'espacement entre les éléments */
+    }
+
+    .Input, .Select, .Button {
+        width: 100%; /* Assure que les champs et le bouton prennent toute la largeur disponible */
+    }
+}
+
+
+
+
+
+
+
+
+/* Styles pour la section "À propos de nous" */
+.about {
+    padding: 4rem 2rem; /* Espacement intérieur pour la section */
+    background-color: #f4f4f4; /* Couleur de fond de la section */
+}
+
+.heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color); /* Couleur de titre personnalisée */
+}
+
+/* Conteneur pour l'image et le contenu */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 2rem; /* Espace entre les éléments */
+    max-width: 1200px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+}
+
+/* Styles pour l'image */
+.about-image {
+    flex: 1; /* Permet à l'image de s'étendre */
+    position: relative; /* Pour gérer le positionnement absolu de la deuxième image */
+}
+
+.about-image img {
+    width: 100%; /* S'assure que les images prennent toute la largeur de leur conteneur */
+    height: auto; /* Maintient le ratio d'aspect */
+    border-radius: 0.5rem; /* Coins arrondis pour l'image */
+}
+
+.about-img {
+    position: absolute; /* Positionne la deuxième image en superposition */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre la deuxième image */
+    width: 60%; /* Ajustez en fonction de vos besoins */
+    opacity: 0.7; /* Rend la deuxième image légèrement translucide */
+    border-radius: 0.5rem; /* Coins arrondis pour la deuxième image */
+}
+
+/* Styles pour le contenu */
+.about-content {
+    flex: 1; /* Permet au contenu de s'étendre */
+    max-width: 600px; /* Largeur maximale du contenu */
+    padding: 1rem; /* Espacement intérieur pour le contenu */
+    background-color: #fff; /* Couleur de fond du contenu */
+    border-radius: 0.5rem; /* Coins arrondis pour le contenu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce pour le contenu */
+}
+
+.about-content h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color); /* Couleur du titre dans le contenu */
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333; /* Couleur du texte */
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color); /* Couleur de fond du bouton */
+    color: var(--white); /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Effet de transition pour le survol */
+    position: relative; /* Pour les effets de superposition du texte */
+    overflow: hidden; /* Masque les éléments qui dépassent du bouton */
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 200%;
+    background-color: var(--primary-color-dark); /* Couleur au survol */
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    transform: translateY(-50%); /* Déplace la couleur de fond au survol */
+}
+
+.text-1 {
+    transition: transform 0.3s ease; /* Effet de transition pour le texte */
+}
+
+.btn:hover .text-1 {
+    transform: translateY(-1rem); /* Déplace le texte au survol */
+}
+
+.text-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white); /* Couleur du texte au survol */
+    opacity: 0; /* Rend le texte invisible par défaut */
+    transition: opacity 0.3s ease; /* Effet de transition pour l'opacité */
+}
+
+.btn:hover .text-2 {
+    opacity: 1; /* Rend le texte visible au survol */
+}
+
+/* Media Query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empile les éléments verticalement */
+        align-items: center; /* Centre les éléments horizontalement */
+    }
+
+    .about-image,
+    .about-content {
+        max-width: 100%; /* Permet aux éléments de s'étendre à la largeur de l'écran */
+    }
+}
+
