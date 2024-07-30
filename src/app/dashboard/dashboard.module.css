@@ -1,0 +1,151 @@
+.Main {
+  height: 300vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+
+.mainL {
+  background-color: rgb(114, 104, 104);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.liste {
+  font-size: 22px;
+}
+.mainR {
+  display: grid;
+  grid-template-rows: 30% 30% 40%;
+  gap: 20px;
+}
+.Rtop {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contentT {
+  height: 85%;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.cTt {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+}
+.Rmiddle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.Rbottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.titre {
+  font-size: 42px;
+  font-weight: 700;
+}
+.para {
+  font-size: 22px;
+  font-weight: 400;
+}
+.input {
+  width: 80%;
+  height: 10%;
+  border: solid black 1px;
+}
+.btn {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(23, 228, 85);
+}
+.btn:hover {
+  color: white;
+}
+.video {
+  height: 100%;
+  width: 50%;
+  background-color: black;
+}
+.card {
+  height: 80%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.card:hover {
+  scale: 105%;
+  transition: all 200ms;
+  background-color: rgb(136, 128, 117);
+}
+.img {
+  height: 50%;
+  width: 100%;
+  background-image: url(../../../public/Sans\ titre.png);
+  background-size: cover;
+  box-shadow: 20px black;
+}
+.img3 {
+  height: 50%;
+  width: 100%;
+  background-size: cover;
+  background-image: url(../../../public/Sans\ titre.jpeg);
+}
+.img2 {
+  height: 50%;
+  width: 100%;
+  background-image: url(../../../public/math.jpeg);
+  background-size: cover;
+}
+.i {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+.tr {
+  font-size: 22px;
+  font-weight: 700;
+}
+.tre {
+  font-size: 22px;
+  font-weight: 200;
+}
+.btn2 {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(23, 228, 85);
+}
+.contentF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  height: 30%;
+  width: 100%;
+}
