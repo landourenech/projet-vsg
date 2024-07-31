@@ -104,8 +104,10 @@ export default function Dash() {
               src="../../../public/video.mp4"
               muted
               playsinline
-              autoPgnc blay
+              autoPgnc
+              blay
               controls
+              loop
               className={styles.video}
             ></video>
           </div>
@@ -127,18 +129,24 @@ export default function Dash() {
               Lanalyse, une exploration en profondeur des concepts mathématiques
             </p>
             <p className={styles.tre}>
-            Les mathématiques sont une science qui étudie les quantités, les structures, les espaces et les changements.
+              Les mathématiques sont une science qui étudie les quantités, les
+              structures, les espaces et les changements.
             </p>
-            <button className={styles.btn2}>  <Link href="../cours"><a href="">commencé</a> </Link> </button>
+            <button className={styles.btn2}>
+              {" "}
+              <Link href="../cours">
+                <a href="">commencé</a>{" "}
+              </Link>{" "}
+            </button>
           </div>
           <div className={styles.card}>
             <div className={styles.img3}></div>
             <p className={styles.tr}>
-             
-            De la graine au fruit, le cycle de la vie végétale
+              De la graine au fruit, le cycle de la vie végétale
             </p>
             <p className={styles.tre}>
-            La SVT est une discipline scientifique qui étudie le vivant et son environnement. Elle englobe un large spectre de domaines.
+              La SVT est une discipline scientifique qui étudie le vivant et son
+              environnement. Elle englobe un large spectre de domaines.
             </p>
             <button className={styles.btn2}>commencé</button>
           </div>

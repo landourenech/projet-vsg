@@ -3,7 +3,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: 15% 85%;
-
 }
 
 .mainL {
@@ -13,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  width:  250px;
+  width: 250px;
 }
 .liste {
   font-size: 22px;
@@ -95,13 +94,17 @@
   text-align: center;
   gap: 30px;
   border-radius: 20px;
-
 }
 
 .card:hover {
   scale: 105%;
   transition: all 200ms;
-  background-color: rgb(136, 128, 117);
+
+  background-color: rgb(114, 216, 111);
+
+  
+  background-color: rgb(22, 163, 74);
+
 }
 .img {
   height: 50%;
@@ -132,9 +135,8 @@
   gap: 30px;
   color: #ffffff;
   font-size: 30px;
-  
 }
-.i:hover{
+.i:hover {
   color: #0028d8;
 }
 .tr {
@@ -150,10 +152,10 @@
   height: 50px;
   width: 100px;
   background-color: rgb(22, 163, 74);
-  
+
   border-radius: 5px;
 }
-.btn2:hover{
+.btn2:hover {
   background-color: white;
 }
 .contentF {

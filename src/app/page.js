@@ -55,7 +55,8 @@ export default function Home() {
       </form>
 
 
-      
+      <button type="submit" className={styles.Button}> <Link href="./Payement">sRechercher</Link> </button>
+
     </div>
     <div className=" max-w-1200 flex justify-center items-center flex-wrap gap-4 ">
     <button className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center transition-transform transform hover:scale-105 hover:bg-green-500 hover:shadow-lg">

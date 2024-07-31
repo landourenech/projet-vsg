@@ -34,9 +34,9 @@ export const Header = () => {
           <i className="fas fa-bars"></i>
         </div>
       </div>
-      <img  src="./profile.svg" alt="" className="w-10 " />
+      <img  src="./profile.svg" alt="" className="w-10 relative" />
 
-        <form className="top-full right-8 bg-white shadow-lg w-80 p-8 ">
+        <form className=" hidden absolute top-full right-8 bg-white shadow-lg w-80 p-8">
           <h3 className="text-2xl text-black text-center mb-4">Se connecter</h3>
           <input
             type="email"
