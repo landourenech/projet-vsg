@@ -11,7 +11,7 @@ export default function dash() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="white"
                 class="bi bi-building"
                 viewBox="0 0 16 16"
               >
@@ -25,7 +25,7 @@ export default function dash() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="white"
                 class="bi bi-bell-fill"
                 viewBox="0 0 16 16"
               >
@@ -38,7 +38,7 @@ export default function dash() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="white"
                 class="bi bi-chat-right-fill"
                 viewBox="0 0 16 16"
               >
@@ -55,7 +55,7 @@ export default function dash() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="white"
                 class="bi bi-gear"
                 viewBox="0 0 16 16"
               >
@@ -69,7 +69,7 @@ export default function dash() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="white"
                 class="bi bi-info-circle-fill"
                 viewBox="0 0 16 16"
               >
