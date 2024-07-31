@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap");
+
+:root{
+  
+  --primary-color: #0f990f;
+  
+  --secondary: #8adb8a;
+  --black: #141414;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(18, 22, 245, 0.1);
+  --secondary-background-color:#2601ce;
+}

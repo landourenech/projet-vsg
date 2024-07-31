@@ -1,0 +1,52 @@
+/* Add these styles to your global CSS file or the respective CSS module */
+
+
+.menude{
+  width: 25px;
+  height: 25px;
+}
+.menude:hover ~  
+/* Menu styles for mobile */
+nav.flex {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    nav.flex {
+      display: flex;
+    }
+  }
+  
+  header .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  
+  header .menu-btn i {
+    font-size: 2.5rem;
+    color: var(--black);
+  }
+  
+  header .menu-btn:hover i {
+    color: var(--primary-color);
+  }
+  
+  header .login-form {
+    display: none;
+  }
+  
+  header .login-form.active {
+    display: block;
+  }
+  
+  header .login-form {
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: var(--white);
+    box-shadow: .5rem;
+    width: 35rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+  }
+  

@@ -123,7 +123,7 @@ export default function Physique() {
 Le courant électrique est le flux ordonné de charges électriques, généralement des électrons, à travers un conducteur. <br />
 
 3.1 Intensité du courant
-L'intensité du courant électrique, mesurée en ampères (A), représente la quantité de charges électriques qui traversent une section du conducteur par unité de temps.
+L intensité du courant électrique, mesurée en ampères (A), représente la quantité de charges électriques qui traversent une section du conducteur par unité de temps.
             </p>
             <p className={styles.parag}>
             Formule :
@@ -132,7 +132,7 @@ I = Q / t <br />
 
 Où : <br />
 
-I est l'intensité du courant en ampères (A) <br />
+I est l intensité du courant en ampères (A) <br />
 Q est la charge électrique en coulombs (C) <br />
 t est le temps en secondes (s)! <br />
             </p>

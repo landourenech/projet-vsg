@@ -1,0 +1,61 @@
+/* Styles pour la section de recherche */
+.SearchSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.SearchForm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    max-width: 800px; /* Largeur maximale pour les écrans plus grands */
+    width: 100%;
+    padding: 1rem;
+    background: var(--white); /* Couleur de fond du formulaire */
+    border-radius: 0.5rem; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce pour le formulaire */
+}
+
+/* Styles pour les champs de saisie et les sélecteurs */
+.Input, .Select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    width: 100%; /* Assure que les champs prennent toute la largeur disponible */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+.Select {
+    flex: 1; /* Permet aux sélecteurs de s'étendre si nécessaire */
+}
+
+/* Styles pour le bouton */
+.Button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color); /* Couleur de fond du bouton */
+    color: var(--white); /* Couleur du texte du bouton */
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Effet de transition pour le survol */
+}
+
+.Button:hover {
+    background-color: var(--primary-color-dark); /* Couleur de fond au survol */
+}
+
+/* Media Query pour les écrans plus petits */
+@media (max-width: 768px) {
+    .SearchForm {
+        flex-direction: column; /* Empile les éléments pour les petits écrans */
+        gap: 0.5rem; /* Réduit l'espacement entre les éléments */
+    }
+
+    .Input, .Select, .Button {
+        width: 100%; /* Assure que les champs et le bouton prennent toute la largeur disponible */
+    }
+}
