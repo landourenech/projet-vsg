@@ -95,7 +95,7 @@
 .card:hover {
   scale: 105%;
   transition: all 200ms;
-  background-color: rgb(136, 128, 117);
+  background-color: rgb(114, 216, 111);
 }
 .img {
   height: 50%;

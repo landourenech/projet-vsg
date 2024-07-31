@@ -1,0 +1,155 @@
+.physique {
+  height: 300vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 2;
+}
+.r {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.index {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image {
+  height: 80%;
+  width: 30%;
+  background-color: black;
+}
+.content {
+  height: 80%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+  gap: 20px;
+}
+.titre {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.para {
+  font-size: 1.25;
+  font-weight: 400;
+}
+.cours {
+  height: 50%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+
+.topCour {
+  height: 40%;
+  width: 70%;
+
+  padding: 2%;
+}
+.titre2 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.video {
+  height: 95%;
+  width: 100%;
+  background-color: black;
+}
+.bottomCour {
+  height: 50%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3%;
+  align-items: center;
+}
+.commentaire {
+  height: 20%;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.i {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.contentCom {
+  height: 80%;
+  width: 80%;
+  background-color: rgb(83, 74, 74);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+  padding: 5px;
+}
+.message {
+  height: 25%;
+  width: 100%;
+  background-color: azure;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.photo {
+  height: 100%;
+  width: 10%;
+  border-radius: 50%;
+
+  background-color: black;
+}
+.mainL {
+  background-color: rgb(114, 104, 104);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  height: 100%;
+}
+.liste {
+  font-size: 22px;
+}
+.messages {
+  width: 100%;
+  background-color: azure;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+.input {
+  height: 20%;
+  width: 95%;
+  border-radius: 10px;
+}
+.btn {
+  height: 15%;
+  width: 15%;
+  border-radius: 10px;
+  background-color: rgb(68, 202, 75);
+}
