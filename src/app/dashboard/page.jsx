@@ -88,9 +88,9 @@ export default function Dash() {
                 Bienvenu ASSEKO sur Vision science Gabon
               </h1>
               <p className={styles.para}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
-                quibusdam corrupti ipsa similique hic, dignissimos atque
-                corporis accusamus nam laboriosam?
+              Votre tableau de bord a été personnalisé en fonction de vos préférences.
+              Fixez-vous un nouvel objectif d'apprentissage pour cette semaine!
+                
               </p>
               <input
                 className={styles.input}
@@ -113,36 +113,31 @@ export default function Dash() {
           <div className={styles.card}>
             <div className={styles.img}></div>
             <p className={styles.tr}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur, id.
+            De la théorie à l'expérience : explorons ensemble le monde physique.
             </p>
             <p className={styles.tre}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur, id.
+            La physique est la science qui étudie les phénomènes naturels, de l'infiniment petit à l'infiniment grand
             </p>
             <button className={styles.btn2}>commencé</button>
           </div>
           <div className={styles.card}>
             <div className={styles.img2}></div>
             <p className={styles.tr}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur, id.
+              L'analyse, une exploration en profondeur des concepts mathématiques
             </p>
             <p className={styles.tre}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur, id.
+            Les mathématiques sont une science qui étudie les quantités, les structures, les espaces et les changements.
             </p>
             <button className={styles.btn2}>commencé</button>
           </div>
           <div className={styles.card}>
             <div className={styles.img3}></div>
             <p className={styles.tr}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur, id.
+             
+            De la graine au fruit, le cycle de la vie végétale
             </p>
             <p className={styles.tre}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequatur, id.
+            La SVT est une discipline scientifique qui étudie le vivant et son environnement. Elle englobe un large spectre de domaines.
             </p>
             <button className={styles.btn2}>commencé</button>
           </div>
@@ -151,8 +146,7 @@ export default function Dash() {
           <div className={styles.head}>
             <h1 className={styles.titre}>Programme de TP</h1>
             <p className={styles.para}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              quasi neque beatae ab,
+            Les travaux pratiques (TP) sont une composante essentielle de l'apprentissage,<br /> particulièrement dans les domaines scientifiques et techniques. Ils permettent <br /> de mettre en pratique les connaissances théoriques acquises en cours .
             </p>
           </div>
           <div className={styles.contentF}>
