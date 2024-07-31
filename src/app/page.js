@@ -1,4 +1,6 @@
 import Image from "next/image";
+import {connexion} from "./connexion/page";
+
 
 export default function Home() {
   return (
@@ -108,6 +110,7 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <footer/>
     </main>
   );
 }
