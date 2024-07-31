@@ -20,8 +20,8 @@ export  const Header =() =>{
     <div id="login-btn" class="">
         <a href='' className=''>
         <Image src="\user-fill.svg"
-                width={30}
-                height={30}
+                width={25}
+                height={25}
                 className="hover:bg-[#12c2b9]"
                 alt="user"
                 /> 

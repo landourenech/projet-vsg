@@ -5,7 +5,7 @@
 export default function connexion(){
     return (
         <>
-        <Header/> 
+        
          <body className=" font-sans bg-gray-200 flex justify-center items-center min-h-screen m-0 p-5 ms:flex ms:justify-center ms:items-center">
             
         
