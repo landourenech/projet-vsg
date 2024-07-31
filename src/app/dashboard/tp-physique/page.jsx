@@ -85,12 +85,10 @@ export default function Physique() {
         <div className={styles.index}>
           <div className={styles.content}>
             <h1 className={styles.titre}>
-              Lorem ipsum dolor sit amet consectetur.
+              Bienvenu ASSEKO sur Vision science Gabon
             </h1>
             <p className={styles.para}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-              repellat inventore asperiores voluptatibus facilis natus optio
-              ipsa tenetur illum totam.
+              Votre tableau de bord a été personnalisé en fonction de vos préférence. Fixez-vous un nouvel objectif d appretissage pour cette semaine!
             </p>
           </div>
 
@@ -106,50 +104,45 @@ export default function Physique() {
             ></video>
           </div>
           <div className={styles.bottomCour}>
-            <div className={styles.titre2}>Introduction</div>
-            <p className={styles.para}>
-              Lorem ipsum, dolor sit amet consectetur adip <br />
-              isicing elit. Illum distinctio, velit laborum reprehenderit ipsam
-              molestias, voluptasbr <br /> doloribus earum dignissimos eveniet
-              eos nesciunt deleniti a magni non laboriosam omnis facilis
-              possimus!
+            <div className={styles.titre2}>Introduction à l électricité</div>
+            <p className={styles.parag}>
+            1.1 Qu est-ce que l électricité ?
+            L électricité est une forme d énergie résultant de la présence et du flux de charges électriques. Elle peut se manifester sous forme de charge statique, de courant électrique et de champ électromagnétique.
             </p>
-            <p className={styles.para}>
-              Lorem ipsum, dolor sit amet consectetur adip <br />
-              isicing elit. Illum distinctio, velit laborum reprehenderit ipsam
-              molestias, voluptasbr <br /> doloribus earum dignissimos eveniet
-              eos nesciunt deleniti a magni non laboriosam omnis facilis
-              possimus!
+            <p className={styles.parag}>
+            2. Les charges électriques
+              Les charges électriques sont une propriété fondamentale de la matière. Il existe deux types de charges : positive et négative. <br />
+
+            2.1 Attraction et répulsion
+              Les charges de même signe se repoussent, tandis que les charges de signes opposés s attirent.
+
+
             </p>
-            <p className={styles.para}>
-              Lorem ipsum, dolor sit amet consectetur adip <br />
-              isicing elit. Illum distinctio, velit laborum reprehenderit ipsam
-              molestias, voluptasbr <br /> doloribus earum dignissimos eveniet
-              eos nesciunt deleniti a magni non laboriosam omnis facilis
-              possimus!
+            <p className={styles.parag}>
+            3. Le courant électrique
+Le courant électrique est le flux ordonné de charges électriques, généralement des électrons, à travers un conducteur. <br />
+
+3.1 Intensité du courant
+L'intensité du courant électrique, mesurée en ampères (A), représente la quantité de charges électriques qui traversent une section du conducteur par unité de temps.
             </p>
-            <p className={styles.para}>
-              Lorem ipsum, dolor sit amet consectetur adip <br />
-              isicing elit. Illum distinctio, velit laborum reprehenderit ipsam
-              molestias, voluptasbr <br /> doloribus earum dignissimos eveniet
-              eos nesciunt deleniti a magni non laboriosam omnis facilis
-              possimus!
+            <p className={styles.parag}>
+            Formule :
+
+I = Q / t <br />
+
+Où : <br />
+
+I est l'intensité du courant en ampères (A) <br />
+Q est la charge électrique en coulombs (C) <br />
+t est le temps en secondes (s)! <br />
             </p>
 
             <div className={styles.titre2}> A retenir</div>
-            <p className={styles.para}>
-              Lorem ipsum, dolor sit amet consectetur adip <br />
-              isicing elit. Illum distinctio, velit laborum reprehenderit ipsam
-              molestias, voluptasbr <br /> doloribus earum dignissimos eveniet
-              eos nesciunt deleniti a magni non laboriosam omnis facilis
-              possimus!
+            <p className={styles.parag}>
+       
             </p>
-            <p className={styles.para}>
-              Lorem ipsum, dolor sit amet consectetur adip <br />
-              isicing elit. Illum distinctio, velit laborum reprehenderit ipsam
-              molestias, voluptasbr <br /> doloribus earum dignissimos eveniet
-              eos nesciunt deleniti a magni non laboriosam omnis facilis
-              possimus!
+            <p className={styles.parag}>
+            L électricité est une forme d énergie qui nous entoure et que nous utilisons quotidiennement. Elle alimente nos appareils électroniques, éclaire nos maisons et fait fonctionner de nombreux mécanismes.
             </p>
           </div>
         </div>
@@ -162,7 +155,7 @@ export default function Physique() {
               <div className={styles.messages}>
                 <div className={styles.nom}>ASSEKO</div>
                 <div className={styles.tex}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing.
+                  Je n arrives pas a regarder la video
                 </div>
               </div>
             </div>
@@ -170,7 +163,8 @@ export default function Physique() {
             <div className={styles.message}>
               <div className={styles.photo}></div>
               <div className={styles.messages}>
-                <div className={styles.nom}>ASSEKO</div>
+                <div className={styles.nom}>Administrateur</div>
+                
                 <div className={styles.tex}>
                   Lorem ipsum dolor sit amet, consectetur adipisicing.
                 </div>

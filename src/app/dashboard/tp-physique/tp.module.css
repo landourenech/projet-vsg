@@ -6,6 +6,9 @@
   justify-content: center;
   align-items: center;
   gap: 2;
+
+  
+
 }
 .r {
   height: 100%;
@@ -13,6 +16,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
+ 
+ 
 }
 .index {
   height: 20%;
@@ -20,39 +26,54 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+ 
+  background-image: linear-gradient(to right, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
 }
 .image {
   height: 80%;
-  width: 30%;
-  background-color: black;
+  width: 40%;
+  background-image: url('../../../../public/image\ 6.png');
 }
 .content {
   height: 80%;
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: start;
   gap: 20px;
+
+
 }
 .titre {
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: 3.3rem;
+  font-weight: 700;
 }
 .para {
-  font-size: 1.25;
-  font-weight: 400;
+  /* font-size: 10.25; */
+  font-weight: 500;
+  font-size: 1.5rem;
+
+ 
+}
+.parag {
+  /* font-size: 10.25; */
+  font-weight: 500;
+  font-size: 1.1rem;
+
+ 
 }
 .cours {
   height: 50%;
   width: 100%;
-
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1%;
+ 
 }
 
 .topCour {
@@ -92,11 +113,13 @@
   justify-content: start;
   align-items: center;
   gap: 10px;
+
+  
 }
 .contentCom {
   height: 80%;
   width: 80%;
-  background-color: rgb(83, 74, 74);
+  background-color: rgb(22, 163, 74);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -112,6 +135,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 }
 .photo {
   height: 100%;
@@ -121,7 +145,7 @@
   background-color: black;
 }
 .mainL {
-  background-color: rgb(114, 104, 104);
+  background-color: rgb(22, 163, 74);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -130,7 +154,13 @@
   height: 100%;
 }
 .liste {
-  font-size: 22px;
+  font-size: 35px;
+  color: #ffffff;
+  
+}
+.liste:hover{
+  color: rgb(0, 140, 255);
+  
 }
 .messages {
   width: 100%;
@@ -148,8 +178,14 @@
   border-radius: 10px;
 }
 .btn {
-  height: 15%;
-  width: 15%;
+  height: 20%;
+  width: 20%;
   border-radius: 10px;
-  background-color: rgb(68, 202, 75);
+  background-color: rgb(22, 163, 74);
+}
+.btn:hover{
+  background-color: white;
+}
+.tex{
+  
 }

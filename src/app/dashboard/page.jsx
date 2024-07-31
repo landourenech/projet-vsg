@@ -90,7 +90,7 @@ export default function Dash() {
               </h1>
               <p className={styles.para}>
               Votre tableau de bord a été personnalisé en fonction de vos préférences.
-              Fixez-vous un nouvel objectif d'apprentissage pour cette semaine!
+              Fixez-vous un nouvel objectif dapprentissage pour cette semaine!
                 
               </p>
               <input
@@ -114,17 +114,17 @@ export default function Dash() {
           <div className={styles.card}>
             <div className={styles.img}></div>
             <p className={styles.tr}>
-            De la théorie à l'expérience : explorons ensemble le monde physique.
+            De la théorie à lexpérience : explorons ensemble le monde physique.
             </p>
             <p className={styles.tre}>
-            La physique est la science qui étudie les phénomènes naturels, de l'infiniment petit à l'infiniment grand
+            La physique est la science qui étudie les phénomènes naturels, de linfiniment petit à linfiniment grand
             </p>
             <button className={styles.btn2}>commencé</button>
           </div>
           <div className={styles.card}>
             <div className={styles.img2}></div>
             <p className={styles.tr}>
-              L'analyse, une exploration en profondeur des concepts mathématiques
+              Lanalyse, une exploration en profondeur des concepts mathématiques
             </p>
             <p className={styles.tre}>
             Les mathématiques sont une science qui étudie les quantités, les structures, les espaces et les changements.
@@ -147,7 +147,7 @@ export default function Dash() {
           <div className={styles.head}>
             <h1 className={styles.titre}>Programme de TP</h1>
             <p className={styles.para}>
-            Les travaux pratiques (TP) sont une composante essentielle de l'apprentissage,<br /> particulièrement dans les domaines scientifiques et techniques. Ils permettent <br /> de mettre en pratique les connaissances théoriques acquises en cours .
+            Les travaux pratiques (TP) sont une composante essentielle de lapprentissage,<br /> particulièrement dans les domaines scientifiques et techniques. Ils permettent <br /> de mettre en pratique les connaissances théoriques acquises en cours .
             </p>
           </div>
           <div className={styles.contentF}>
