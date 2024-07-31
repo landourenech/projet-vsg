@@ -1,11 +1,15 @@
 
 import Image from "next/image";
-import styles from './styles/Home.module.css';
-// import styles from `./styles/Search.modele.css`;
-// import { Header } from "./composent/Header";
-
+import styles from './styles/Home.module.css'; // Assurez-vous que le fichier Home.module.css existe
+import {Header} from "./composent/Header"; // Assurez-vous que le chemin est correct
+import Search from "./search/page"
+import Link from "next/link";
 export default function Home() {
   return (
+    <>
+      <Header />
+
+
   <div className="max-w-1200 flex gap-10 justify-center items-center flex-col">
    <div className={styles.Home}>
       <div className={styles.HomeCon}>
@@ -47,7 +51,7 @@ export default function Home() {
                     <option value="examen">Examens</option>
                   </select>
                   <input type="date" id="dateInput" className={styles.Input} /> */}
-                  <button type="submit" className={styles.Button}>Rechercher</button>
+                  <button type="submit" className={styles.Button}> <Link href="./search">sRechercher</Link> </button>
       </form>
 
 
@@ -91,7 +95,7 @@ export default function Home() {
           <div key={i} className="relative bg-white border border-primary rounded-lg overflow-hidden shadow-lg">
             <div className="relative">
               <Image 
-                src={`/image2${i}.png`} 
+                src={`/image${i}.png`} 
                 alt={`Course ${i}`} 
                 height={500} 
                 width={800} 
@@ -171,5 +175,6 @@ Libreville – Gabon</h3>
 
 
   </div>
+   </>
   );
 }

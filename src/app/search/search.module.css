@@ -1,0 +1,28 @@
+
+
+
+/* Styles pour la section de recherche */
+.Search {
+    display: flex;
+    
+    justify-content: center; /* Centre le formulaire horizontalement */
+    align-items: center; /* Centre le formulaire verticalement */
+    flex-direction: column; /* Empile les éléments verticalement */
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 700px; /* Largeur maximale pour le formulaire de recherche */
+    margin: 0 auto; /* Centre la section horizontalement */
+}
+
+/* Styles pour le formulaire de recherche */
+.SearchForm {
+    display: flex;
+     /* Empile les champs verticalement */
+    align-items: center; /* Centre les champs horizontalement */
+    gap: 1rem; /* Espace entre les éléments */
+    width: 100%; /* Assure que le formulaire prend toute la largeur disponible */
+    padding: 1rem;
+    background: var(--white); /* Couleur de fond du formulaire */
+    border-radius: 0.5rem; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(10, 25, 238, 0.1); /* Ombre douce pour le formulaire */
+}
