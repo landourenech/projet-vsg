@@ -1,4 +1,5 @@
 import styles from "./dashboard.module.css";
+import Link from "next/link";
 
 export default function Dash() {
   return (
@@ -103,7 +104,7 @@ export default function Dash() {
               src="../../../public/video.mp4"
               muted
               playsinline
-              autoplay
+              autoPgnc blay
               controls
               className={styles.video}
             ></video>
@@ -128,7 +129,7 @@ export default function Dash() {
             <p className={styles.tre}>
             Les mathématiques sont une science qui étudie les quantités, les structures, les espaces et les changements.
             </p>
-            <button className={styles.btn2}>commencé</button>
+            <button className={styles.btn2}>  <Link href="../cours"><a href="">commencé</a> </Link> </button>
           </div>
           <div className={styles.card}>
             <div className={styles.img3}></div>
