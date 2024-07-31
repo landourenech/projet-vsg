@@ -10,7 +10,11 @@ export default function connexion(){
             
         
              <form id="inscriptionForm" className="bg-white p-5 rounded-lg shadow-lg w-full max-w-md">
+<<<<<<< HEAD
         <h1 className="text-center text-gray-800 text-[30px] font-bold">Formulaire d Inscription</h1>
+=======
+        <h1 className="text-center text-gray-800 text-[30px] font-bold">Formulaire d'Inscription</h1>
+>>>>>>> 10d1edf221e7488afe0a7bd7d88b6640c5f21135
         
         <label for="nom" className="block mt-2">Nom:</label>
         <input type="text" id="nom" name="nom" required className="w-full p-2 mt-1 border border-gray-300 rounded-md box-border"/>
@@ -61,7 +65,11 @@ export default function connexion(){
             <label for="cardNumber">Numéro de carte:</label>
             <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" className="w-full p-2 mt-1 border border-gray-300 rounded-md box-border"/>
             
+<<<<<<< HEAD
             <label for="expiryDate">Date d expiration:</label>
+=======
+            <label for="expiryDate">Date d'expiration:</label>
+>>>>>>> 10d1edf221e7488afe0a7bd7d88b6640c5f21135
             <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/AA" className="w-full p-2 mt-1 border border-gray-300 rounded-md box-border"/>
             
             <label for="cvv">CVV:</label>
@@ -100,7 +108,11 @@ export default function connexion(){
     
 
         
+<<<<<<< HEAD
         <button type="submit" className="w-full p-2.5 bg-green-500 text-white border-none rounded cursor-pointer mt-5 hover:bg-green-600">S inscrire</button>
+=======
+        <button type="submit" className="w-full p-2.5 bg-green-500 text-white border-none rounded cursor-pointer mt-5 hover:bg-green-600">S'inscrire</button>
+>>>>>>> 10d1edf221e7488afe0a7bd7d88b6640c5f21135
     </form>
     </body>
 

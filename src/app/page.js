@@ -1,9 +1,16 @@
 
 import Image from "next/image";
+<<<<<<< HEAD
 import styles from './styles/Home.module.css'; // Assurez-vous que le fichier Home.module.css existe
 import {Header} from "./composent/Header"; // Assurez-vous que le chemin est correct
 import Search from "./search/page"
 import Link from "next/link";
+=======
+import { connexion } from "./connexion/page";
+
+import { Header } from "./composant/header";
+
+>>>>>>> 10d1edf221e7488afe0a7bd7d88b6640c5f21135
 export default function Home() {
   return (
     <>
@@ -142,6 +149,7 @@ Enseignant de Physique-Chimie
 Libreville  Gabon</h3>
       <p className="text-lg text-gray-700 py-4 leading-relaxed">Le blog que je vous propose est né d une passion profonde que je souhaite partager non seulement avec mes collègues, mais aussi avec les apprenants du Gabon et d ailleurs.
 
+<<<<<<< HEAD
 .</p>
       <p className="text-lg text-gray-700 py-4 leading-relaxed">L idée de ce blog découle d un constat fait durant mes années de lycéen et de mes premières années en tant qu éducateur : la difficulté d accéder à des ressources en Physique-Chimie conformes au programme en vigueur au Gabon, en dehors des cours</p>
       <a href="#" className="inline-block py-2 px-4 border-2 border-primary rounded relative overflow-hidden text-primary font-medium group">
@@ -177,5 +185,26 @@ Libreville  Gabon</h3>
 
   </div>
    </>
+=======
+        <a
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Deploy{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
+            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          </p>
+        </a>
+      </div>
+      <footer />
+    </main>
+>>>>>>> 10d1edf221e7488afe0a7bd7d88b6640c5f21135
   );
 }
