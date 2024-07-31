@@ -1,13 +1,9 @@
 import Image from "next/image";
-import {connexion} from "./connexion/page";
-
+import { connexion } from "./connexion/page";
 
 import { Header } from "./composant/header";
 
 export default function Home() {
-<<<<<<< HEAD
-  return <Header />;
-=======
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -115,8 +111,7 @@ export default function Home() {
           </p>
         </a>
       </div>
-      <footer/>
+      <footer />
     </main>
   );
->>>>>>> 4e293c840d7c7af8c22a5a77f0f115acff82967e
 }
