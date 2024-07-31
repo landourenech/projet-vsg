@@ -12,13 +12,14 @@
     align-items: flex-start; /* Aligne le contenu à gauche sur les grands écrans */
     justify-content: center;
     padding: 0 2rem; /* Ajout d'un espacement intérieur pour les petits écrans */
-    background: url(../../../public/home.jpg) no-repeat center center ;
+    background: url(../../../public/home.jpg) no-repeat center  ;
     background-size: cover;
     background-position: center;
-    background-color: #ffd900;
+    background-color: #f8ad0a;
+    width: 100%;
+    height: 700px;
     
 
-     padding: 4rem 2rem; /* Espacement intérieur pour la section */
    
 }
 
@@ -34,7 +35,7 @@
 
 /* Styles pour les éléments de texte */
 .H3 {
-    font-size: 5rem;
+    font-size:37px;
     color: var(--white);
     line-height: 1.2;
     text-align: left; /* Alignement du texte à gauche */
@@ -144,7 +145,6 @@
 /* Styles pour la section de recherche */
 .Search {
     display: flex;
-    flex-direction: column;
     justify-content: center; /* Centre le formulaire horizontalement */
     align-items: center; /* Centre le formulaire verticalement */
     flex-direction: column; /* Empile les éléments verticalement */
@@ -153,9 +153,7 @@
     max-width: 700px; /* Largeur maximale pour le formulaire de recherche */
     margin: 0 auto; /* Centre la section horizontalement */
 }
-.image{
 
-}
 /* Styles pour le formulaire de recherche */
 .SearchForm {
     display: flex;
